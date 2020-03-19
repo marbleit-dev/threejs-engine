@@ -1,0 +1,92 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#bbbbbb, #666666);
+    /* background: radial-gradient(#f4e7d6, #e0b985); */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+canvas {
+    display: block;
+}
+
+img {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    opacity: .7;
+    transition: opacity .33s;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+.controls {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+/* i {
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    opacity: .7;
+    transition: opacity .33s;
+}
+
+i:hover {
+    opacity: 1;
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+} */
+
+button {
+    background: none;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    outline: none;
+    min-width: 150px;
+    min-height: 40px;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: .7;
+    transition: opacity .33s;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:disabled,
+button[disabled] {
+    opacity: .4;
+    cursor: default;
+}
